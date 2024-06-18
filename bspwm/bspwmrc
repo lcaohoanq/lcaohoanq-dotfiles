@@ -23,7 +23,7 @@ kitty &
 picom --config ~/.config/picom/picom.conf &
 
 # corner radius
-# ~/.config/bspwm/corner_radius.sh
+~/.config/bspwm/corner_radius.sh
 
 compton --backend glx --vsync opengl-swc &
 
