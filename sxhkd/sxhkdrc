@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	dmenu_run
+  rofi -show drun
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -121,9 +121,6 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # my configuration
-# Launch Rofi in drun mode
-super + space
-    rofi -show drun
 
 # Sound control on keyboard
 # Volume up
@@ -151,12 +148,12 @@ alt + shift + {Left,Down,Up,Right}
     bspc node -z {left -10 0,down 0 10,up 0 -10,right 10 0}
 
 # Screenshots
-@Print
-    scrot -s --line mode=edge ~/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_scrot.png
+# @Print
+#    scrot -s --line mode=edge ~/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_scrot.png
 
 # Brightness
-XF86MonBrightness{up,down}
-    brightnessctl set 355{+,-}
+# XF86MonBrightness{up,down}
+#    brightnessctl set 355{+,-}
 
 # https://www.youtube.com/watch?v=I-aKqH66lgM
 # config gap like a chad
