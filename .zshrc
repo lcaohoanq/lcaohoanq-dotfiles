@@ -71,7 +71,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias showdisk='cd /media/lcaohoanq/ ; ls -al'
 alias yt='ytfzf'
-alias 'nvim=/opt/nvim-linux64/bin/nvim'
+alias 'v=/opt/nvim-linux64/bin/nvim'
 alias cl='clear'
 alias back='cd ..'
 alias chrome='flatpak run com.google.Chrome'
@@ -89,4 +89,7 @@ alias 'wifi-connect'='nmcli device wifi connect'
 alias nikefe='cd /media/lcaohoanq/DATA/PIED/NikeCloneTraining-FE-Project'
 alias nikebe='cd /media/lcaohoanq/DATA/PIED/NikeCloneTraining-BE-Project'
 alias config='nvim ~/.config/bspwm/'
-. "$HOME/.cargo/env"
+
+alias code='flatpak run com.visualstudio.code'
+export PATH=$PATH:/usr/local/bin/docker
+export DOCKER_HOST=unix:///var/run/docker.sock
