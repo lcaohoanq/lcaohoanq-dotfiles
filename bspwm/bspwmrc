@@ -8,6 +8,9 @@ pgrep -x sxhkd >/dev/null || sxhkd &
 bspc monitor -d I II III IV V VI VII VIII IX X
 
 # Start MPD service
+# Must install and ensure the mpd services is working
+# sudo app update && sudo apt install mpd
+# check the file is exist after install: ls /lib/systemd/system/mpd.service
 systemctl --user start mpd
 
 # polybar
